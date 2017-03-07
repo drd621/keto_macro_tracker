@@ -13,16 +13,16 @@ class Launch {
         while(true) {
             System.out.println("*MENU*\n");
             System.out.println("1. Carbs\n2. Protein\n3. Fat\n4. Reset");
-            int choice = input.nextInt();
-            switch (choice) {
+            int menuChoice = input.nextInt();
+            switch (menuChoice) {
                 case 1:
-                    carbs.displayCarbs();
+                    carbs.carbMenu();
                     break;
                 case 2:
-                    protein.displayProtein();
+                    protein.proteinMenu();
                     break;
                 case 3:
-                    fat.displayFat();
+                    fat.fatMenu();
                     break;
                 case 4:
                     carbs.resetCarbs();
