@@ -12,7 +12,7 @@ class Launch {
         // TODO implement start/stop
         while(true) {
             System.out.println("*MENU*\n");
-            System.out.println("1. Carbs\n2. Protein\n3. Fat\n4. Reset");
+            System.out.println("1. Carbs\n2. Protein\n3. Fat\n4. Reset\n5. Exit");
             int menuChoice = input.nextInt();
             switch (menuChoice) {
                 case 1:
@@ -30,6 +30,8 @@ class Launch {
                     fat.resetFat();
                     System.out.println("Macros Reset");
                     break;
+                case 5:
+                    return;
                 default:
                     System.out.println("Please enter valid menu option");
             }

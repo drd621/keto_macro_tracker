@@ -1,4 +1,4 @@
-// TODO return to main menu, exception handling
+// TODO exception handling
 
 import java.util.Scanner;
 
@@ -29,8 +29,7 @@ class Fat {
                     totalFat += fatCount;
                     break;
                 case 3:
-                    // back to main menu
-                    break;
+                    return;
                 default:
                     System.out.println("Please enter valid menu option");
             }
@@ -40,5 +39,6 @@ class Fat {
 
     void resetFat() {
         totalFat = 0;
+        maxFat = 0;
     }
 }

@@ -1,4 +1,4 @@
-// TODO return to main menu, exception handling
+// TODO exception handling
 
 import java.util.Scanner;
 
@@ -29,8 +29,7 @@ class Protein {
                     totalProtein += proteinCount;
                     break;
                 case 3:
-                    // back to main menu
-                    break;
+                    return;
                 default:
                     System.out.println("Please enter valid menu option");
             }
@@ -40,5 +39,6 @@ class Protein {
 
     void resetProtein() {
         totalProtein = 0;
+        maxProtein = 0;
     }
 }
