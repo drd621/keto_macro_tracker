@@ -1,4 +1,4 @@
-// TODO implement exception handling on menu
+// TODO implement exception handling
 // TODO possible refactor of reset functionality
 
 import java.util.Scanner;
