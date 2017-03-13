@@ -9,7 +9,6 @@ class Launch {
         Protein protein = new Protein();
         Fat fat = new Fat();
         Scanner input = new Scanner(System.in);
-        // TODO implement start/stop
         while(true) {
             System.out.println("*MENU*\n");
             System.out.println("1. Carbs\n2. Protein\n3. Fat\n4. Reset\n5. Exit");
