@@ -6,8 +6,6 @@ class Protein {
     private int totalProtein;
     private int maxProtein;
     private Scanner input = new Scanner(System.in);
-    private Scanner max = new Scanner(System.in);
-    private Scanner entry = new Scanner(System.in);
     // Allows user to enter daily protein limit, keep a running total, and notify if limit is exceeded
     void proteinMenu() {
         do {
@@ -21,11 +19,11 @@ class Protein {
             switch (subMenuChoice) {
                 case 1:
                     System.out.println("Enter daily protein limit in grams: ");
-                    maxProtein = max.nextInt();
+                    maxProtein = input.nextInt();
                     break;
                 case 2:
                     System.out.println("Enter protein consumed in grams: ");
-                    int proteinCount = entry.nextInt();
+                    int proteinCount = input.nextInt();
                     totalProtein += proteinCount;
                     break;
                 case 3:

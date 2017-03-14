@@ -6,8 +6,6 @@ class Fat {
     private int totalFat;
     private int maxFat;
     private Scanner input = new Scanner(System.in);
-    private Scanner max = new Scanner(System.in);
-    private Scanner entry = new Scanner(System.in);
     // Allows user to enter daily fat limit, keep a running total, and notify if limit is exceeded
     void fatMenu() {
         do {
@@ -21,11 +19,11 @@ class Fat {
             switch (subMenuChoice) {
                 case 1:
                     System.out.println("Enter daily fat limit in grams: ");
-                    maxFat = max.nextInt();
+                    maxFat = input.nextInt();
                     break;
                 case 2:
                     System.out.println("Enter fat consumed in grams: ");
-                    int fatCount = entry.nextInt();
+                    int fatCount = input.nextInt();
                     totalFat += fatCount;
                     break;
                 case 3:

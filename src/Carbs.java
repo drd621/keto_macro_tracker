@@ -6,8 +6,6 @@ class Carbs {
     private int totalCarbs;
     private int maxCarbs;
     private Scanner input = new Scanner(System.in);
-    private Scanner max = new Scanner(System.in);
-    private Scanner entry = new Scanner(System.in);
     // Allows user to enter daily carb limit, keep a running total, and notify if limit is exceeded
     void carbMenu() {
         do {
@@ -21,11 +19,11 @@ class Carbs {
             switch (subMenuChoice) {
                 case 1:
                     System.out.println("Enter daily carb limit in grams: ");
-                    maxCarbs = max.nextInt();
+                    maxCarbs = input.nextInt();
                     break;
                 case 2:
                     System.out.println("Enter carbs consumed in grams: ");
-                    int carbCount = entry.nextInt();
+                    int carbCount = input.nextInt();
                     totalCarbs += carbCount;
                     break;
                 case 3:
