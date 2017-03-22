@@ -35,8 +35,8 @@ class Protein {
                 System.out.println("Please enter valid menu option");
                 input.next();
             }
-        } while (totalProtein < maxProtein);
-        System.out.println("You have reached your daily protein limit");
+        } while (totalProtein <= maxProtein);
+        System.out.println("You have exceeded your daily protein limit");
     }
 
     void resetProtein() {

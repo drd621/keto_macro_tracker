@@ -35,8 +35,8 @@ class Fat {
                 System.out.println("Please enter valid menu option");
                 input.next();
             }
-        } while (totalFat < maxFat);
-        System.out.println("You have reached your daily fat limit");
+        } while (totalFat <= maxFat);
+        System.out.println("You have exceeded your daily fat limit");
     }
 
     void resetFat() {

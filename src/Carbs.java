@@ -35,8 +35,8 @@ class Carbs {
                 System.out.println("Please enter valid menu option");
                 input.next();
             }
-        } while (totalCarbs < maxCarbs);
-        System.out.println("You have reached your daily carb limit");
+        } while (totalCarbs <= maxCarbs);
+        System.out.println("You have exceeded your daily carb limit");
     }
 
     void resetCarbs() {
