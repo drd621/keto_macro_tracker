@@ -11,8 +11,7 @@ class Launch {
         Scanner input = new Scanner(System.in);
         while(true) {
             try {
-                System.out.println("*MENU*\n");
-                System.out.println("1. Carbs\n2. Protein\n3. Fat\n4. Reset\n5. Exit");
+                printMenu();
                 int menuChoice = input.nextInt();
                 switch (menuChoice) {
                     case 1:
@@ -40,5 +39,10 @@ class Launch {
                 input.next();
             }
         }
+    }
+
+    void printMenu() {
+        System.out.println("*MENU*\n");
+        System.out.println("1. Carbs\n2. Protein\n3. Fat\n4. Reset\n5. Exit");
     }
 }
