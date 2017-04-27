@@ -30,6 +30,7 @@ class Launch {
                         System.out.println("Macros Reset");
                         break;
                     case 5:
+                        System.out.println("Goodbye");
                         return;
                     default:
                         System.out.println("Please enter valid menu option");
