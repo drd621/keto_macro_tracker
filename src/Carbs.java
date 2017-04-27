@@ -9,12 +9,7 @@ class Carbs {
     void carbMenu() {
         do {
             try {
-                System.out.println("*CARBS*\n");
-                System.out.println("Current Carbs: " + totalCarbs + "g");
-                System.out.println("Maximum Carbs: " + maxCarbs + "g\n");
-                System.out.println("1. Daily Carb Limit");
-                System.out.println("2. New Carb Entry");
-                System.out.println("3. Main Menu");
+                printMenu();
                 int subMenuChoice = input.nextInt();
                 switch (subMenuChoice) {
                     case 1:
@@ -37,6 +32,15 @@ class Carbs {
             }
         } while (totalCarbs <= maxCarbs);
         System.out.println("You have exceeded your daily carb limit");
+    }
+
+    void printMenu() {
+        System.out.println("*CARBS*\n");
+        System.out.println("Current Carbs: " + totalCarbs + "g");
+        System.out.println("Maximum Carbs: " + maxCarbs + "g\n");
+        System.out.println("1. Daily Carb Limit");
+        System.out.println("2. New Carb Entry");
+        System.out.println("3. Main Menu");
     }
 
     void resetCarbs() {

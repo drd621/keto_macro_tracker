@@ -9,12 +9,7 @@ class Protein {
     void proteinMenu() {
         do {
             try {
-                System.out.println("*PROTEIN*\n");
-                System.out.println("Current Protein: " + totalProtein + "g");
-                System.out.println("Maximum Protein: " + maxProtein + "g\n");
-                System.out.println("1. Daily Protein Limit");
-                System.out.println("2. New Protein Entry");
-                System.out.println("3. Main Menu");
+                printMenu();
                 int subMenuChoice = input.nextInt();
                 switch (subMenuChoice) {
                     case 1:
@@ -37,6 +32,15 @@ class Protein {
             }
         } while (totalProtein <= maxProtein);
         System.out.println("You have exceeded your daily protein limit");
+    }
+
+    void printMenu() {
+        System.out.println("*PROTEIN*\n");
+        System.out.println("Current Protein: " + totalProtein + "g");
+        System.out.println("Maximum Protein: " + maxProtein + "g\n");
+        System.out.println("1. Daily Protein Limit");
+        System.out.println("2. New Protein Entry");
+        System.out.println("3. Main Menu");
     }
 
     void resetProtein() {

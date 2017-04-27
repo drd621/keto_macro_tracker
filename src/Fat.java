@@ -9,12 +9,7 @@ class Fat {
     void fatMenu() {
         do {
             try {
-                System.out.println("*FAT*\n");
-                System.out.println("Current Fat: " + totalFat + "g");
-                System.out.println("Maximum Fat: " + maxFat + "g\n");
-                System.out.println("1. Daily Fat Limit");
-                System.out.println("2. New Fat Entry");
-                System.out.println("3. Main Menu");
+                printMenu();
                 int subMenuChoice = input.nextInt();
                 switch (subMenuChoice) {
                     case 1:
@@ -37,6 +32,15 @@ class Fat {
             }
         } while (totalFat <= maxFat);
         System.out.println("You have exceeded your daily fat limit");
+    }
+
+    void printMenu() {
+        System.out.println("*FAT*\n");
+        System.out.println("Current Fat: " + totalFat + "g");
+        System.out.println("Maximum Fat: " + maxFat + "g\n");
+        System.out.println("1. Daily Fat Limit");
+        System.out.println("2. New Fat Entry");
+        System.out.println("3. Main Menu");
     }
 
     void resetFat() {
